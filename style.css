@@ -3,7 +3,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.bg1 {background-color: aqua;}
+.bg1 {background-color: rgb(0, 65, 255);}
 .bg2 {background-color: rgb(0, 195, 255);}
 .bg3 {background-color: rgb(225, 255, 255);}
 .bgwhite {background-color: white;}
@@ -16,7 +16,7 @@
 .br1 {border-radius: 1rem;}
 .cur {cursor: pointer;}
 
-.c1 {color: rgb(0, 204, 255);}
+.c1 {color: white;}
 .c2 {color: rgb(0, 130, 170);}
 .cin {color: inherit;}
 
@@ -24,8 +24,9 @@
 .f12 {font-size: 1.2rem;}
 .f3 {font-size: 3rem;}
 .fbold {font-weight: bold;}
-
 .flex {display: flex;}
+.flex0 {flex: 0;}
+.flex1 {flex: 1;}
 .flex-wrap {flex-wrap: wrap;}
 .flex-col {flex-direction: column;}
 .flex-row{flex-direction: row;}
@@ -35,8 +36,9 @@
 .center {text-align: center;}
 .jcc {justify-content: center;}
 
-.link{text-decoration: none;}
+.link {text-decoration: none;}
 .link:hover {text-shadow: -2px 2px 2px aquamarine;}
+.list-none {list-style-type: none;}
 
 .m0 {margin: 0;}
 .ma {margin: auto;}
@@ -51,6 +53,7 @@
 
 .p05 {padding: 0.5rem;}
 .p1 {padding: 1rem;}
+.pl1 {padding-left: 1rem;}
 .p31 {padding: 3rem 1rem;}
 
 .talc {text-align-last: center;}
@@ -59,6 +62,7 @@
 .w90 {width: 90%;}
 .w80 {width: 80%;}
 .w3rem {width: 3rem;}
+.win {width: inherit;}
 .wfit {width: fit-content;}
 .wmax {width: max-content;}
 .nowrap {word-wrap: unset;}
@@ -69,6 +73,10 @@ input[type=text], input[type=email], select {
     outline: none;
     box-shadow: 0 2px 0 aquamarine;
 }
+
+.sticky {position: sticky;}
+
+.t0 {top: 0;}
 textarea:focus-visible {outline: solid 2px aquamarine;}
 textarea::-webkit-scrollbar {width: 5px;}
 textarea::-webkit-scrollbar-track {background: transparent;}
@@ -82,6 +90,7 @@ textarea::-webkit-scrollbar-thumb {
     border-radius: 0.5rem;
     box-shadow: -3px 3px 5px grey;
 }
+
 @media screen and (min-width:540px) {
     .md-flex {display: flex;}
     .md-flex-col {flex-direction: column;}
