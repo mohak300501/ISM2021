@@ -16,7 +16,6 @@
 }
 
 
-
 .header .row{
     margin-top: 70px;
 }
@@ -53,11 +52,11 @@ nav ul li{
     margin-right: 20px;
 }
 
-a {
+.navbar a{
     text-decoration: none;
     color: white;
 }
-p{
+.navbar p{
     color: white;
 }
 
@@ -66,7 +65,7 @@ p{
     width: 90%;
     color: #fff;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -76,7 +75,11 @@ p{
     font-size: 62px;
 }
 
-
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
 
 
 
