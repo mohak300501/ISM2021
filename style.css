@@ -38,6 +38,10 @@
 }
 
 /* header navbar */
+.logo{
+    filter: grayscale(1) invert(1);
+}
+
 .navbar{
     display: flex;
     align-items: center;
@@ -129,6 +133,43 @@ nav ul li{
     color: white;
 }
 
+
+/* ---------------footer section-------------------------------- */
+
+.footer{
+    background :#000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex:1;
+}
+ul{
+    list-style: none;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
 
 /* ----------------- */
 
