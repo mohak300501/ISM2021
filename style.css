@@ -439,12 +439,10 @@ hr{
 
 /* -----------------participants page------------- */
 
-/* .table{
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-} */
+.table{
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
 
 table {
     margin: auto;
