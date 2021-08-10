@@ -291,7 +291,6 @@ hr{
 
 /* ------------Form Page---------------- */
 
-/* About us */
 
 .sub-header {
     height: 30vh;
@@ -482,3 +481,16 @@ textarea::-webkit-scrollbar-thumb {
     .md-w65 {width: 65%;}
     .md-w96 {width: 96%;}
 } */
+
+
+.description{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.description p{
+    font-size: 18px;
+    line-height: 28px;
+    color: #333;
+    justify-content: center;
+}
