@@ -47,12 +47,6 @@
     align-items: center;
     padding: 20px;
 }
-
-.navbar{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
 nav{
     flex: 1;
     text-align: right;
@@ -193,7 +187,7 @@ ul li a{
     color: #fff;
 }
 
-form{
+.footer form{
     padding-bottom: 15px;
     display: flex;
     align-items: center;
@@ -202,11 +196,11 @@ form{
     margin-bottom: 50px;
 }
 
-form  .far{
+.footer form  .far{
     font-size: 18px;
     margin-right: 10px;
 }
-form input{
+.footer form input{
     width: 100%;
     background: transparent;
     color: #ccc;
@@ -214,14 +208,14 @@ form input{
     outline: none;
 }
 
-form button{
+.footer form button{
     background: transparent;
     border: 0;
     outline: none;
     cursor: pointer;
 }
 
-form button .fas{
+.footer form button .fas{
     font-size: 16px;
     color: #ccc;
 }
@@ -293,6 +287,93 @@ hr{
     .footer .col-4:nth-child(2), .footer .col-4:nth-child(3){
         flex-basis: 100%;
     }
+}
+
+/* ------------Form Page---------------- */
+
+/* About us */
+
+.sub-header {
+    height: 30vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+
+.sub-header h1 {
+    margin-top: 70px;
+    font-size: 2em;
+}
+
+
+
+.hero{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero form{
+    width: 90%;
+    max-width: 600px;
+}
+.hero .input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+.hero input, .hero textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid black;
+    color: black;
+    background: transparent;
+    font-size: 15px;
+}
+
+.hero label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: black;
+    cursor: text;
+    transition: 0.2s;
+}
+
+.hero button{
+    padding: 10px 0;
+    color: black;
+    outline: none;
+    background: transparent;
+    border: transparent;
+    border: 1px solid black;
+    width: 100%;
+    cursor: pointer;
+}
+
+.hero input:focus~label,
+.hero input:valid~label,
+.hero textarea:focus~label,
+.hero textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+
+.row-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row-form .input-group{
+    flex-basis: 48%;
 }
 
 /* ----------------- */
