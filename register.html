@@ -34,28 +34,28 @@
 
     <!-- Form Section -->
     <div class="hero">
-        <form>
+        <form method="post" autocomplete="off" name="google-sheet">
             <div class="row-form">
                 <div class="input-group">
-                    <input type="text" id="name" required>
+                    <input type="text" id="name" name="Name" required>
                     <label for="name"><i class="fas fa-user"></i> Your Name</label>
                 </div>
                 <div class="input-group">
-                    <input type="text" id="number" required>
+                    <input type="text" name="Number" id="number" required>
                     <label for="number"><i class="fas fa-phone-square-alt"></i> Phone no.</label>
                 </div>
             </div>
 
             <div class="input-group">
-                <input type="email" id="email" required>
+                <input type="email" name="Email" id="email" required>
                 <label for="email"><i class="fas fa-envelope"></i> Email Id</label>
             </div>
             <div class="input-group">
-                <textarea id="message" rows="8" required></textarea>
+                <textarea name="Message" id="message" rows="8" required></textarea>
                 <label for="message"><i class="fas fa-comments"></i>Your Message</label>
             </div>
             <div class="hero-btn">
-                <button id="btn">
+                <button id="btn" type="submit" name="submit" value="Login">
                     <p id="btnText">Submit</p>
                     <div class="check-box">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
@@ -125,7 +125,16 @@
             btnText.innerHTML = "Thanks";
             btn.classList.add('active');
         }
+        
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxPKWP0bdMHGQdlNSCpQYEsWMtEKCOMivUsMb2ncharGNheaHRl65yrdR11oFyiJyuZ/exec'
+        const form = document.forms['google-sheet']
 
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Registered Successfully"))
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 
 </body>
