@@ -1,6 +1,6 @@
 
 * {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     /* font-family: 'Times New Roman', Times, serif; */
     margin:0;
     padding: 0;
@@ -24,10 +24,20 @@
 
 
 /* --------------------header section---------------------------------------- */
+
+.carouselImage{
+    min-height: 80vh;
+    width: 100%;
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/M4.jpg);
+    background-position: center;
+    /* background-size: cover; */
+    /* position: relative; */
+}
+
 .header {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/background-2.jpeg);
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/M4.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -37,72 +47,76 @@
     margin-top: 70px;
 }
 
-/* header navbar */
-.logo{
-    filter: grayscale(1) invert(1);
-}
-
-.navbar{
-    display: flex;
-    align-items: center;
-    padding: 20px;
-}
-nav{
-    flex: 1;
-    text-align: right;
-}
-nav ul{
-    display: inline-block;
-    list-style-type: none;
-}
-
-nav ul li{
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.navbar a{
-    text-decoration: none;
-    color: white;
-}
-.navbar p{
-    color: white;
-}
-
-.navbar ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #f44336;
-    display: block;
-    margin: auto;
-    transition: 0.3s;
-}
-.navbar ul li:hover::after {
-    width: 100%;
-}
-
 
 /* header: text-box */
 .text-box {
+    font-family: 'Poppins', sans-serif;
     width: 90%;
     color: #fff;
     position: absolute;
-    top: 40%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.text-box a{
+    margin-top: 200px;
 }
 
 .text-box h1 {
-    font-size: 62px;
+    margin-bottom: 40px;
+    font-size: 4em;
+    font-weight: bold;
 }
 
 .text-box p {
     margin: 10px 0 40px;
-    font-size: 14px;
+    font-size: 1.5em;
     color: #fff;
 }
+
+.btn{
+    display: inline-block;
+    background-color:#88b1ee;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 30px;
+    margin: 30px 0;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #563434;
+}
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -135,7 +149,7 @@ nav ul li{
     bottom: 0;
     background: linear-gradient(to right, #00093c, #2d0b00) ;
     color: #fff;
-    padding: 100px 0 30px;
+    padding: 50px 0 30px;
     border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
@@ -160,7 +174,7 @@ nav ul li{
     flex-basis: 15%;
 }
 
-.logo{
+.logo2{
     width: 100px;
     margin-bottom: 30px;
 }
@@ -177,12 +191,12 @@ nav ul li{
     margin: 20px 0;
 }
 
-ul li{
+.footer ul li{
     list-style: none;
     margin-bottom: 12px;
 }
 
-ul li a{
+.footer ul li a{
     text-decoration: none;
     color: #fff;
 }
@@ -248,7 +262,7 @@ hr{
     text-align: center;
 }
 
-.underline{
+/* .underline{
     width: 100%;
     height: 5px;
     background: #767676;
@@ -257,8 +271,8 @@ hr{
     top: 25px;
     left: 0;
     overflow: hidden;
-}
-
+} */
+/* 
 .underline span{
     width: 15px;
     height: 100%;
@@ -267,17 +281,7 @@ hr{
     position:absolute;
     top: 0;
     left: 10px;
-    animation: moving 2s linear infinite;
-}
-
-
-@keyframes moving{
-    0%{
-        left: -20px;
-    }
-    100%{
-        left: 100%;
-    }
+     */
 }
 
 @media (max-width: 700px) {

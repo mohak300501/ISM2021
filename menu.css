@@ -1,0 +1,119 @@
+.menuWrapper {
+    margin: 5px 0 5px 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: -50px 0 -50px 0;
+}
+
+
+html[xmlns] .clear {
+    display: block
+}
+* html .clear {
+    height: 1%
+}
+
+
+nav .fas, .menuHamburgerContainer .fas {
+    display: none;
+}
+
+nav a{ 
+    color: #232323;
+    font-family: var(--font-family-lato);
+    font-size: 14px;
+    line-height: 16.8px;
+    text-transform: uppercase !important;
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin: 0 auto
+}
+
+nav li {
+    list-style: none;
+    position: relative;
+    width: 11.11%;
+    text-align: center;
+    display: inline-block;
+}
+nav li a {
+    display: block;
+    padding: 5px;
+    padding-bottom: 6px;
+    background-position: 0px 0px;
+}
+nav li a:hover,
+nav li.active a {
+    background-position: 0px -36px;
+    background-color: #F0F1F6;
+}
+
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+@media(min-width: 700px){
+    .stick{
+        background-color: white;
+        position: sticky;
+        top: 0;
+        display: block;
+        z-index: 9999;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+}
+
+
+
+
+@media(max-width: 700px) {
+   
+    nav ul li {
+        display: block !important;
+        
+    }
+
+    .logoImage {
+        margin-bottom: 40px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.7s;
+    }
+    nav .fas, .menuHamburgerContainer .fas {
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    nav ul {
+        padding: 30px;
+    }
+}

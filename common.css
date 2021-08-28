@@ -1,0 +1,48 @@
+.cmsContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0 50px 0;
+    font-family: var(--font-family-segoe) !important;
+}
+
+.cmsContainerNoPad {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: var(--font-family-segoe) !important;
+}
+
+.logoImage {
+    max-width: 80%;
+}
+
+
+
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #B8C9D9;
+}
+
+.centeredFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerInverted {
+    background: linear-gradient(180deg, rgba(0, 103, 179, 0.8) 11.46%, #5183B8 32.29%, #5183B8 90.1%);
+    color: #ffffff;
+}
+
+.textArea {
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.cardContainerFont {
+    font-family: var(--font-family-segoe) !important;
+}
