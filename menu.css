@@ -64,7 +64,7 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-@media(min-width: 700px){
+@media screen and (min-width: 700px){
     .stick{
         background-color: white;
         position: sticky;
@@ -78,9 +78,7 @@ nav ul li a:hover {
 }
 
 
-
-
-@media(max-width: 700px) {
+@media screen and (max-width: 700px) {
    
     nav ul li {
         display: block !important;
@@ -94,7 +92,6 @@ nav ul li a:hover {
     nav {
         display: flex;
         justify-content: space-between;
-
 
         position: fixed;
         background: #f44336;
@@ -117,3 +114,6 @@ nav ul li a:hover {
         padding: 30px;
     }
 }
+
+
+
