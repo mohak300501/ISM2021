@@ -94,7 +94,7 @@ nav ul li a:hover {
         justify-content: space-between;
 
         position: fixed;
-        background: #f44336;
+        background: #203860;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -112,6 +112,15 @@ nav ul li a:hover {
     }
     nav ul {
         padding: 30px;
+    }
+    nav li a{
+        color: white;
+        padding-bottom: 40px;
+        font-size: 18px;
+       
+    }
+    .fa-times{
+        color: white !important;
     }
 }
 
