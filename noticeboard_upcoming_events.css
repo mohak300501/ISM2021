@@ -4,6 +4,10 @@
   padding: 5px;
   border-radius: 8px;
   margin-top: 50px;
+  transition: 0.5s;
+}
+.main-page-noticeboard:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .main-page-noticeboard > .row {
@@ -91,18 +95,22 @@
 
 .noticeboard-upcoming-events-container {
   width: 100%;
-  display: grid;
-  grid-template: 1fr / 1fr 1fr;
+  display:  flex;
+  justify-content: space-between;
 }
 
 .noticeboard-container {
-  grid-area: 1 / 1 / 2 / 2;
-  padding: 25px;
+  flex-basis: 65%;
+
+}
+.NOC{
+  width: 80%;
+  margin: auto;
+
 }
 
 .upcoming-events-container {
-  grid-area: 1 / 2 / 2 / 3;
-  padding: 25px;
+  flex-basis: 30%;
 }
 
 @media only screen and (max-width: 900px) {

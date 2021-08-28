@@ -1,6 +1,6 @@
 
 * {
-    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Poppins', sans-serif;
     /* font-family: 'Times New Roman', Times, serif; */
     margin:0;
     padding: 0;
@@ -15,12 +15,12 @@
     padding-right: 25px;
 }
 
-.row{
+/* .row{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+} */
 
 
 /* --------------------header section---------------------------------------- */
@@ -183,10 +183,11 @@ a {
     bottom: 0;
     background: linear-gradient(to right, #00093c, #2d0b00) ;
     color: #fff;
-    padding: 50px 0 30px;
+    padding: 0px 5px;
     border-top-left-radius: 125px;
     font-size: 13px;
     line-height: 20px;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 
@@ -199,21 +200,23 @@ a {
     justify-content: space-between;
 }
 
-.footer .col-4{
+.footer .col-1{
+    flex-basis:  75%;
+    padding: 10px;
+}
+
+.footer .col-2{
     flex-basis:  25%;
     padding: 10px;
 }
 
-.footer .col-4:nth-child(2),.footer .col-4:nth-child(3){
-    flex-basis: 15%;
-}
 
 .logo2{
-    width: 100px;
+    width: 250px;
     margin-bottom: 30px;
 }
 
-.col-4 h3{
+.col-1 h3{
     width: fit-content;
     margin-bottom: 40px;
     position: relative;
@@ -289,7 +292,7 @@ hr{
     width: 90%;
     border: 0;
     border-bottom: 1px solid #ccc;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
 .copyright{
@@ -367,7 +370,7 @@ hr{
     margin-bottom: 30px;
     position: relative;
 }
-.hero input, .hero textarea{
+.hero input, .hero select{
     width: 100%;
     padding: 10px;
     outline: 0;
@@ -478,8 +481,20 @@ hr{
 /* -----------------participants page------------- */
 
 .table{
-   margin-top: 100px;
-   margin-bottom: 100px;
+   margin: 100px auto;
+   height: 50vh;
+   overflow-y: auto;
+   width: max-content;
+   
+}
+
+table :first-child th{
+    position: sticky; top: 0; z-index: 9999;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: #00093c;
+    color: #fff;
 }
 
 table {
@@ -537,15 +552,22 @@ tr:hover {
 
 
 
-/* ---------dummy--------- */
-.description{
-    width: 80%;
-    margin: 50px auto;
+/* -------------NOC---------- */
+
+.name{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    padding-bottom: .5em;
+}
+.data{
+    padding: 1em;
 }
 
-.description p{
-    font-size: 18px;
-    line-height: 28px;
-    color: #333;
-    justify-content: center;
+/* Sch */
+
+.lect{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-right: 1.2em;
 }
