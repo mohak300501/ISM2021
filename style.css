@@ -318,8 +318,8 @@ hr{
     position:absolute;
     top: 0;
     left: 10px;
-     */
-}
+ 
+}    */
 
 @media (max-width: 700px) {
     .footer{
@@ -569,10 +569,11 @@ tr:hover {
 /* -------------NOC---------- */
 
 .name{
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-weight: bold;
     color: black;
     padding-bottom: .5em;
+    width: max-content;
 }
 .data{
     padding: 1em;
@@ -584,4 +585,32 @@ tr:hover {
     margin-bottom: 1em;
     margin-top: 1em;
     margin-right: 1.2em;
+}
+.sch-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sch-col-1{
+    flex-basis: 50%;
+   
+
+}
+.sch-col-2{
+    flex-basis: 50%;
+    align-items: flex-end;
+    flex: 1;
+    text-align: right;
+    
+}
+
+.time{
+    background-color: #1a76bb;
+    display: inline-block;
+    border-radius: 14px;
+    padding: 0px 7px;
+    font-size: 0.6em;
+    color: white;
+    font-weight: bold;
+    width: max-content;
 }
