@@ -28,24 +28,12 @@
 .carouselImage{
     min-height: 80vh;
     width: 100%;
-    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/M4.jpg);
+    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../images/M4.jpg);
     background-position: center;
     /* background-size: cover; */
     /* position: relative; */
 }
 
-.header {
-    min-height: 100vh;
-    width: 100%;
-    background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/M4.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-.header .row{
-    margin-top: 70px;
-}
 
 
 /* header: text-box */
