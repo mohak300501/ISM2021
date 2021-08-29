@@ -201,12 +201,12 @@ a {
 }
 
 .footer .col-1{
-    flex-basis:  75%;
+    flex-basis:  40%;
     padding: 10px;
 }
 
 .footer .col-2{
-    flex-basis:  25%;
+    flex-basis:  60%;
     padding: 10px;
 }
 
