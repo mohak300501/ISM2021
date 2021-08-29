@@ -614,3 +614,14 @@ tr:hover {
     font-weight: bold;
     width: max-content;
 }
+
+
+.fa-envelope-open-text{
+    display: none;
+}
+@media screen and (min-width:700px){
+    .fa-envelope-open-text{
+        display: block;
+        color: #1a76bb;
+    }
+}
