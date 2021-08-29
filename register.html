@@ -29,7 +29,7 @@
         <div class="mainHeader">
 
             <div class="mainHeaderContent">
-                <a href="/Main/pages/_en_Indian_Institute_of_Technology_Roorkee__en_.html">
+                <a href="index.html">
                     <img style="width: 500px" src="images/logo2.png" alt="" class="logoImage" />
                 </a>
             </div>
@@ -53,7 +53,7 @@
                             <li><a href="register.html">Register</a></li>
                             <li><a href="Participants.html">Participants</a></li>
                             <li><a href="NOC.html">NOC</a></li>
-                            <li><a href="sch.html">Info</a></li>
+                            <li><a href="sch.html">SCHEDULE</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
@@ -63,7 +63,7 @@
     </div>
 
 
-    <div style="background: rgb(230, 244, 247);">
+    <div style="background: rgb(246 253 255);">
         
         <!-- Form Section -->
         <div class="hero">
@@ -91,12 +91,12 @@
                 </div>
 
                 <div class="input-group">
-                    <select name="cars" id="cars" required>
+                    <select name="Post" id="cars" required>
                         <option selected disabled>- Select a category -</option>
-                        <option value="volvo">Student</option>
-                        <option value="saab">Pre Final Post Doc</option>
-                        <option value="saab">Final Post Doc</option>
-                        <option value="mercedes">Faculty</option>
+                        <option value="Ph.D. Student">Ph.D. Student</option>
+                        <option value="Post Doc">Post Doc</option>
+                        <!-- <option value="Final Post Doc">Final Post Doc</option> -->
+                        <option value="Faculty">Faculty</option>
                       </select>
                 </div>
 
@@ -155,6 +155,24 @@
         function hideMenu() {
             navLinks.style.right = "-200px"
         }
+
+        var btn = document.getElementById('btn');
+        var btnText = document.getElementById('btnText');
+
+        btn.onclick = function () {
+            btnText.innerHTML = "Thanks";
+            btn.classList.add('active');
+        }
+        
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxPKWP0bdMHGQdlNSCpQYEsWMtEKCOMivUsMb2ncharGNheaHRl65yrdR11oFyiJyuZ/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Registered Successfully"))
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 </body>
 
