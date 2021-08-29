@@ -573,8 +573,17 @@ tr:hover {
     font-weight: bold;
     color: black;
     padding-bottom: .5em;
+    /* width: max-content; */
+}
+
+.sch-name{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: black;
+    padding-bottom: .5em;
     width: max-content;
 }
+
 .data{
     padding: 1em;
 }
