@@ -1,0 +1,642 @@
+.mainHeader{
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mainHeaderContent{
+    width: 100%;
+    padding: 10px;
+}
+
+.menuHamburgerContainer {
+    display: none;
+}
+
+.menuMobileContainer{
+    display: none;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    
+    .mainHeader{
+        /* display: flex; */
+        display: grid;
+        /* grid-template: 1fr 5px / 30px 1fr; */
+    }
+
+    .mainHeaderContent {
+        /* grid-area: 1 / 1 / 2 / 3; */
+        text-align: center;
+    }
+
+    .menuHamburgerContainer {
+        /* grid-area: 1 / 2 / 2 / 2; */
+        height: 100%;
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .dividerGrid {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .hamburgerIcon {
+        cursor: pointer;
+    }
+
+    .menuMobileContainer {
+        display: none;
+        position: fixed;
+        z-index: 99999;
+        background-color: #F0F1F6;
+        height: 100vh;
+        top: 0;
+    }
+
+    .menuMobileCross {
+        width: 20px;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+}
+
+
+/* -----------------------menu---------------------- */
+.menuWrapper {
+    margin: 5px 0 5px 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: -50px 0 0 0;
+}
+
+
+html[xmlns] .clear {
+    display: block
+}
+* html .clear {
+    height: 1%
+}
+
+
+nav .fas, .menuHamburgerContainer .fas {
+    display: none;
+}
+
+nav a{ 
+    color: #232323;
+    font-family: var(--font-family-lato);
+    font-size: 14px;
+    line-height: 16.8px;
+    text-transform: uppercase !important;
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin: 0 auto
+}
+
+nav li {
+    list-style: none;
+    position: relative;
+    width: 11.11%;
+    text-align: center;
+    display: inline-block;
+}
+nav li a {
+    display: block;
+    padding: 5px;
+    padding-bottom: 6px;
+    background-position: 0px 0px;
+}
+nav li a:hover,
+nav li.active a {
+    background-position: 0px -36px;
+    background-color: #F0F1F6;
+}
+
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 700px){
+    .stick{
+        background-color: white;
+        position: sticky;
+        top: 0;
+        display: block;
+        z-index: 9999;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+}
+
+
+@media screen and (max-width: 700px) {
+   
+    nav ul li {
+        display: block !important;
+        
+    }
+
+    .logoImage {
+        margin-bottom: 40px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+
+        position: fixed;
+        background: #203860;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 9999;
+        transition: 0.7s;
+    }
+    nav .fas, .menuHamburgerContainer .fas {
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    nav ul {
+        padding: 30px;
+    }
+    nav li a{
+        color: white;
+        padding-bottom: 40px;
+        font-size: 18px;
+       
+    }
+    .fa-times{
+        color: white !important;
+        padding: 20px;
+        padding-top: 30px;
+    }
+}
+
+
+
+/* -------------------------carousel---------------------------- */
+.carouselContainer {
+    width: 100%;
+}
+
+.carouselImage {
+    object-fit: contain !important;
+}
+
+.slideFixed {
+    padding-top: 600px !important;
+}
+
+.carouselTextContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselTextContent {
+    background-color: #12121240;
+    max-width: 450px;
+    padding: 30px;
+    z-index: 99999;
+}
+
+.carouselButtons {
+    z-index: 99998;
+}
+
+.carouselText {
+    font-family: var(--font-family-segoe);
+    font-size: 32px;
+    line-height: 48px;
+    color: #ffffff;
+}
+
+.carouselLinkContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.carouselLinkText {
+    font-family: var(--font-family-lato);
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    padding-right: 10px;
+}
+
+.carouselResponsive {
+    width: 100%;
+    display: block;
+}
+
+@media only screen and (max-width: 1100px) {
+    .carouselResponsive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carouselTextContent {
+        width: 90%;
+        max-width: 450px;
+        padding: 15px;
+    }
+
+    .carouselText {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .carouselLinkText {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .carouselLinkContainer {
+        margin-top: 15px;
+    }
+
+}
+
+
+/* ------------------smallcard------------------ */
+.smallCardGrid {
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+}
+
+.smallCardGridFirst {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.smallCardGridSecond {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.smallCardGridThird {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.smallCard {
+    display: grid;
+    grid-template: 1fr / 1fr 2fr;
+    border: 1px solid #F7F7F7;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgba(134, 134, 134, 0.15);
+    border-radius: 4px;
+    padding: 30px;
+    height: 100%;
+    text-decoration: none !important;
+}
+
+.smallCardFirst {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.smallCardSecond {
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 25px;
+}
+
+.smallCardHeader {
+    font-size: 20px;
+    line-height: 26.6px;
+    color: #232323;
+}
+
+.smallCardDescription {
+    max-width: 160px;
+    color: #232323;
+}
+
+.smallCardImage {
+    margin: 10px;
+    max-width: 90%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    
+    .smallCard {
+        text-align: center;
+        display: block;
+    }
+
+    .smallCardFirst {
+        grid-area: unset;
+        width: 100%;
+        display: block;
+        text-align: center;
+        height: fit-content;
+    }
+
+    .smallCardSecond {
+        grid-area: unset;
+        width: 100%;
+        display: block;
+        text-align: center;
+        height: fit-content;
+        padding: 0;
+    }
+
+    .smallCardDescription {
+        display: none;
+    }
+
+    .smallCardHeader {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+}
+
+/* -------------------buffer----------------- */
+.bufferContainer {
+    padding: 30px 10px 60px 10px;
+}
+
+.bufferButton:hover {
+    background-color: #ffffff;
+    color: #0067B3 !important;
+}
+
+
+
+/* --------------tyopgraphy.css----------- */
+.sectionHeading {
+    font-family: var(--font-family-lato);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33.6px;
+    color: #4c4c4c;
+    margin: 20px 0 20px 0;
+}
+
+.sectionHeadingInverted {
+    color: #ffffff;
+}
+
+.sectionHeadingViewAll {
+    float: right;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1A76BB !important;
+    text-decoration: none !important;
+}
+
+@media only screen and (max-width: 900px) {
+    .sectionHeading {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+}
+
+/* --------list------------ */
+.listElement {
+    width: 100%;
+    display: grid;
+    grid-template: 1fr  / 30px 1fr;
+    margin: 30px 0 30px 0;
+}
+
+.listElementBullet {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.listElementContent {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.listElementHeader {
+    font-family: var(--font-family-segoe);
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 10px;
+}
+
+.listElementDescription {
+    font-family: var(--font-family-segoe);
+    color: #FFFFFF99;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 10px 0 10px 0;
+}
+
+
+/* --------------button----------- */
+.button {
+    border: 2px solid #000;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 10px;
+    font-family: var(--font-family-lato);
+    text-transform: uppercase;
+    text-decoration: none !important;
+}
+
+.buttonInverted {
+    border: 2px solid #ffffff;
+    color: #ffffff !important;
+}
+
+
+/* -----------------noticeboard upcoming events------------- */
+.main-page-noticeboard {
+    width: 100%;
+    background-color: rgba(229, 238, 244, 0.49);
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 50px;
+    transition: 0.5s;
+  }
+  .main-page-noticeboard:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .main-page-noticeboard > .row {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+  }
+  
+  .main-page-noticeboard > .row > .head {
+    display: flex;
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 18.5px;
+    color: rgba(0, 0, 0, 0.6);
+    justify-content: space-between;
+  }
+  
+  .main-page-noticeboard > .seperator {
+    border: 1px solid rgba(26, 118, 187, 0.6);
+    background-color: rgba(26, 118, 187, 0.6);
+    height: .5px;
+  }
+  
+  .main-page-upcoming-events {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .main-page-upcoming-events > .row {
+    margin: 5px 0px;
+    display: flex;
+    text-decoration: none !important;
+    color: #232323 !important;
+  }
+  
+  .main-page-upcoming-events > .row > .date {
+    width: 72px;
+    height: 72px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(134, 134, 134, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .main-page-upcoming-events > .row > .date > .day {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000000;
+  }
+  
+  .main-page-upcoming-events > .row > .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .main-page-upcoming-events > .row > .data > .title {
+    font-size: 17px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.87);
+    /* font-weight: bold; */
+    margin-bottom: 5px;
+  }
+  
+  .main-page-upcoming-events > .row > .data > .description {
+    font-size: 16px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .main-page-upcoming-events > .seperator {
+    border: 1px solid rgba(26, 118, 187, 0.6);
+    background-color: rgba(26, 118, 187, 0.6);
+    height: .5px;
+  }
+  
+  .noticeboard-upcoming-events-container {
+    width: 100%;
+    display:  flex;
+    justify-content: space-between;
+  }
+  
+  .noticeboard-container {
+    flex-basis: 65%;
+  
+  }
+  .NOC{
+    width: 80%;
+    margin: auto;
+  
+  }
+  
+  .upcoming-events-container {
+    flex-basis: 30%;
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .noticeboard-upcoming-events-container {
+      display: block;
+    }
+  }
+  
+  .main-page-noticeboard > .row > a:hover{
+    text-decoration: underline;
+  }
+  .main-page-noticeboard > .row > a{
+    text-decoration: none;
+  }
+
+
+  /* ------------life at iitr button------- */
+  .lifeAtIITRCardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lifeAtIITRCard {
+    min-width: 300px;
+    margin: 10px;
+    height: 600px;
+}
+
+.lifeAtIITRButton {
+    border: 1px solid #0067B3 !important;
+}
+
+.lifeAtIITRButton:hover {
+    background-color: #0067B3 !important;
+    color: #ffffff;
+}
+
+.lifeAtIITRContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
