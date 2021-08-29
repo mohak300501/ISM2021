@@ -481,26 +481,31 @@ hr{
 /* -----------------participants page------------- */
 
 .table{
-   margin: 100px auto;
-   height: 50vh;
-   overflow-y: auto;
-   width: max-content;
-   
+    margin: 0px auto;
+    height: 50vh;
+    overflow-y: auto;
+    width: 100%;
+    overflow-x: auto;
 }
 
 table :first-child th{
-    position: sticky; top: 0; z-index: 9999;
-    padding: 12px;
+    position: sticky; top: 0; z-index: 9998;
+    padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
     background-color: #00093c;
     color: #fff;
 }
 
+table tr :first-child{
+    text-align: center;
+}
+
+
 table {
     margin: auto;
     border-collapse: collapse;
-    width: 800px;
+    min-width: 800px;
     height: 200px;
     border: 1px solid #bdc3c7;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
@@ -513,7 +518,7 @@ tr {
 
 th,
 td {
-    padding: 12px;
+    padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
@@ -530,15 +535,10 @@ tr:hover {
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 768px) {
-    table {
-        width: 90%;
-    }
+.table-content{
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
-
-
-
-
 
 
 

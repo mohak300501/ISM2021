@@ -100,7 +100,7 @@ nav ul li a:hover {
         top: 0;
         right: -200px;
         text-align: left;
-        z-index: 2;
+        z-index: 9999;
         transition: 0.7s;
     }
     nav .fas, .menuHamburgerContainer .fas {
